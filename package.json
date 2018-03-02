@@ -1,0 +1,22 @@
+{
+  "name": "api-starter",
+  "version": "1.0.0",
+  "description": "node api starter",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@buildtools.bisnode.com:7999/bfu/node-api-starter.git"
+  },
+  "author": "",
+  "license": "BISNODE",
+  "dependencies": {
+    "express": "^4.16.2",
+    "log4js": "^2.5.3"
+  },
+  "devDependencies": {
+    "pm2": "^2.10.1"
+  }
+}
