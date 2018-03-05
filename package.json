@@ -4,6 +4,13 @@
   "description": "node api starter",
   "main": "src/index.js",
   "scripts": {
+    "start": "npm run kill && node_modules/.bin/pm2 start --update-env --no-daemon  process.config.js",
+    "start:qa": "npm run kill && node_modules/.bin/pm2 start --update-env --no-daemon --env=qa process.config.js",
+    "start:test": "npm run kill && node_modules/.bin/pm2 start --update-env --no-daemon --env=test process.config.js",
+    "start:prod": "npm run kill && node_modules/.bin/pm2 start --update-env --no-daemon --env=prod process.config.js",
+    "kill": "node_modules/.bin/pm2 kill",
+    "pm2": "node_modules/.bin/pm2",
+    "server": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,6 +20,7 @@
   "author": "",
   "license": "BISNODE",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "log4js": "^2.5.3"
   },
