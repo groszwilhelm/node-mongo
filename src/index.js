@@ -10,6 +10,7 @@ app.set('config', config);
 require('./bootstrap/logger').init(config.app.logLevel);
 require('./bootstrap/express').init(app);
 require('./bootstrap/routes').init(app);
+require('./bootstrap/mongo').init();
 
 app.listen(config.app.port, function () {
   log4js

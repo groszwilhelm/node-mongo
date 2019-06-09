@@ -6,4 +6,6 @@ apiRoutes.get('/status', function (req, res) {
   });
 });
 
+require('./books.routes')(apiRoutes);
+
 module.exports = apiRoutes;

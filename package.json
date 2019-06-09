@@ -18,13 +18,16 @@
     "url": "ssh://git@buildtools.bisnode.com:7999/bfu/node-api-starter.git"
   },
   "author": "",
-  "license": "BISNODE",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "log4js": "^2.5.3"
+    "@hapi/joi": "^15.0.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "log4js": "^2.11.0",
+    "mongoose": "^5.5.13",
+    "mysql": "^2.17.1"
   },
   "devDependencies": {
-    "pm2": "^2.10.1"
+    "pm2": "^2.10.4"
   }
 }
