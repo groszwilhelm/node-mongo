@@ -3,4 +3,4 @@
 - npm install
 - npm run start
 
-## Currently you cna only add and retrieve books 😁
+## Currently you can only add and retrieve books 😁
